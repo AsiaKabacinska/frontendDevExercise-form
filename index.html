@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Skontaktuj się ze mną</h1>
-    <h2>Zawsze chętnie dowiemy się co chodzi Ci po głowie</h2>
+    <div class="form__headings">
+      <h1>Skontaktuj się ze mną</h1>
+      <h2>Zawsze chętnie dowiemy się co chodzi Ci po głowie</h2>
+    </div>
     <form>
       <label for="name">Imię</label>
-      <input id="name" />
+      <input id="name" type="text" />
       <label for="email">e-mail</label>
-      <input id="email" />
-      <label for="textarea" maxlength="120">treść wiadomości</label>
-      <textarea id="textarea" />
+      <input id="email" type="text" />
+      <label for="textarea" maxlength="120"> treść wiadomości</label>
+      <textarea id="textarea" type="text"></textarea>
+      <input type="submit" />
     </form>
-
     <script src="index.js"></script>
   </body>
 </html>
