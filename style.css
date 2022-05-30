@@ -5,14 +5,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   font-weight: 100;
+  font-family: "Montserrat", sans-serif;
 }
-.form__headings {
-  font-weight: 200;
+.form__headings,
+h1,
+h2 {
+  font-weight: 400;
   width: 50%;
   margin: 10px auto;
   text-align: center;
-  font-weight: normal;
+  font-weight: thin;
   margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 form {
@@ -30,4 +35,27 @@ textarea {
   margin: 7px;
   width: 200px;
   height: 100px;
+}
+.btn__submit {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  letter-spacing: 2px;
+  border: 1px solid black;
+}
+.footer {
+  width: 100%;
+  background-color: #383b44;
+  color: #ebecf0;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wrapper__information {
+  text-align: left;
+  margin: 10px;
+}
+.wrapper__resorces {
+  margin: 10px;
 }

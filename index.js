@@ -2,13 +2,14 @@ const form = document.querySelector("form");
 const nameInput = form.querySelector("#name");
 const emailInput = form.querySelector("#email");
 const textAreaInput = form.querySelector("#textarea");
+const submitBtn = form.querySelector("#btn__submit");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let isValidationOk = false;
 
   if (false == validateNameInput(nameInput.value)) {
-    nameInput.style.backgroundColor = "rgba(250, 20, 20, 0.3)";
+    nameInput.style.backgroundColor = "red";
   }
   if (false == validateMail(emailInput.value)) {
     emailInput.style.backgroundColor = "red";
@@ -92,4 +93,13 @@ function validateTextAreaInput(value) {
   }
 
   return true;
+}
+
+// PRZYCISK DISABLE POMOCY !!!
+function validateSubmitBtn() {
+  if (value == false) {
+    submitBtn.classList.toggle("disabled");
+  } else {
+    true;
+  }
 }

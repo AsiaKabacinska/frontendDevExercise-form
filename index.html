@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularz kontaktowy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
     <div class="form__headings">
       <h1>Skontaktuj się ze mną</h1>
       <h2>Zawsze chętnie dowiemy się co chodzi Ci po głowie</h2>
@@ -19,8 +26,24 @@
       <input id="email" type="text" />
       <label for="textarea" maxlength="120"> treść wiadomości</label>
       <textarea id="textarea" type="text"></textarea>
-      <input type="submit" />
+      <input class="btn__submit" type="submit" />
     </form>
     <script src="index.js"></script>
+    <footer class="footer">
+      <div class="wrapper__information">
+        <h2 class="information__heading">Information</h2>
+        <div class="two">Dwa</div>
+        <div class="three">Trzy</div>
+        <div class="four">Cztery</div>
+        <div class="five">Pięć</div>
+        <div class="six">Sześć</div>
+        </div>
+        <div class="wrapper__resorces">
+        <h2 class="resorce__heading">Resorces</h2>
+        <div class="resorces__link">one</div>
+        <div class="resorces__link">two</div>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
